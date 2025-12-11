@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cognot - 功能特性</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+</head>
+<body style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../beij.webp');">
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="../index.html" class="logo-link">
+                <div class="logo">
+                    <img src="../logo.png" alt="Popolili Logo">
+                </div>
+            </a>
+        </div>
+        <div class="navbar-center">
+            <div class="dropdown">
+                <a href="#" class="nav-link dropdown-toggle">
+                    <span class="lang" data-key="product">产品</span>
+                </a>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">Windows版</a>
+                </div>
+            </div>
+            <a href="index.html" class="nav-link">
+                <span class="lang" data-key="features">功能特性</span>
+            </a>
+            <div class="dropdown">
+                <a href="#" class="nav-link dropdown-toggle">
+                    <span class="lang" data-key="community">社区</span>
+                </a>
+                <div class="dropdown-menu">
+                    <a href="https://github.com/CognotEngine/congnot" class="dropdown-item" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://wx.com/CognotEngine" class="dropdown-item" target="_blank">
+                        <i class="fab fa-twitter"></i> Twitter
+                    </a>
+                    <a href="https://discord.gg/F4wFbwZTXu" class="dropdown-item" target="_blank">
+                        <i class="fab fa-discord"></i> Discord
+                    </a>
+                </div>
+            </div>
+            <a href="#" class="nav-link">
+                <span class="lang" data-key="documentation">文档</span>
+            </a>
+        </div>
+        <div class="navbar-right">
+            <!-- 语言切换按钮 -->
+            <div class="language-switch">
+                <button id="lang-zh" class="lang-btn active">中文</button>
+                <button id="lang-en" class="lang-btn">English</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主内容区 -->
+    <main class="features-page">
+        <h1 class="lang" data-key="features-title">自由·发现·突破</h1>
+        <p class="lang" data-key="features-subtitle">体验Cognot的强大功能，创想可能，启迪灵感</p>
+
+
+
+        <!-- 视频展示区 -->
+        <section class="video-gallery">
+            <h2 class="lang" data-key="video-gallery-title">AI创作展示</h2>
+            <p class="lang" data-key="video-gallery-subtitle">查看我们强大的AI创作能力，包括绘画、视频和更多精彩内容。</p>
+            
+            <div class="video-grid">
+                <!-- 第一个视频 -->
+                <div class="video-card">
+                    <div class="video-container">
+                        <video width="100%" height="100%" autoplay loop muted playsinline>
+                            <source src="../eye.webm" type="video/webm">
+                            您的浏览器不支持HTML5视频标签。
+                        </video>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="lang" data-key="video-title-1">AI绘画演示</h3>
+                        <p class="lang" data-key="video-desc-1">展示我们强大的AI绘画功能，创造出令人惊叹的艺术作品。</p>
+                    </div>
+                </div>
+                
+                <!-- 第二个视频 -->
+                <div class="video-card">
+                    <div class="video-container">
+                        <video width="100%" height="100%" autoplay loop muted playsinline>
+                            <source src="../dududu.webm" type="video/webm">
+                            您的浏览器不支持HTML5视频标签。
+                        </video>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="lang" data-key="video-title-2">视频生成技术</h3>
+                        <p class="lang" data-key="video-desc-2">了解我们的AI视频生成技术，轻松创建高质量视频内容。</p>
+                    </div>
+                </div>
+                
+                <!-- 第三个视频 -->
+                <div class="video-card">
+                    <div class="video-container">
+                        <video width="100%" height="100%" autoplay loop muted playsinline>
+                            <source src="../clouds.webm" type="video/webm">
+                            您的浏览器不支持HTML5视频标签。
+                        </video>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="lang" data-key="video-title-3">自动化工作流程</h3>
+                        <p class="lang" data-key="video-desc-3">探索我们的AI自动化工作流程，提高您的工作效率。</p>
+                    </div>
+                </div>
+                
+                <!-- 第四个视频 -->
+                <div class="video-card">
+                    <div class="video-container">
+                        <video width="100%" height="100%" autoplay loop muted playsinline>
+                            <source src="../chibi_fish_tank_shortened.webm" type="video/webm">
+                            您的浏览器不支持HTML5视频标签。
+                        </video>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="lang" data-key="video-title-4">AI语音合成</h3>
+                        <p class="lang" data-key="video-desc-4">体验我们的AI语音合成技术，创造自然流畅的语音内容。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 class="lang" data-key="company">公司</h3>
+                <ul>
+                    <li><a href="#" class="lang" data-key="about-us">关于我们</a></li>
+                    <li><a href="#" class="lang" data-key="blog">博客</a></li>
+                    <li><a href="#" class="lang" data-key="careers">招聘</a></li>
+                    <li><a href="#" class="lang" data-key="contact">联系我们</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 class="lang" data-key="resources">资源</h3>
+                <ul>
+                    <li><a href="#" class="lang" data-key="help-center">帮助中心</a></li>
+                    <li><a href="#" class="lang" data-key="status">服务状态</a></li>
+                    <li><a href="#" class="lang" data-key="terms">服务条款</a></li>
+                    <li><a href="#" class="lang" data-key="privacy">隐私政策</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 class="lang" data-key="download">下载</h3>
+                <ul>
+                    <li><a href="#" class="lang" data-key="windows">Windows</a></li>
+                    <li><a href="#" class="lang" data-key="mac">Mac</a></li>
+                    <li><a href="#" class="lang" data-key="ios">iOS</a></li>
+                    <li><a href="#" class="lang" data-key="android">Android</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 class="lang" data-key="follow-us">关注我们</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fa fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fa fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fa fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="logo">
+                <i class="fa fa-star"></i>
+                Popolili
+            </div>
+            <p>&copy; 2025 Popolili. <span class="lang" data-key="all-rights-reserved">保留所有权利</span>.</p>
+        </div>
+    </footer>
+
+    <!-- 多语言支持脚本 -->
+    <script>
+        // 语言包
+        const translations = {
+            zh: {
+                home: "首页",
+                product: "产品",
+                features: "功能特性",
+                community: "社区",
+                documentation: "文档",
+                login: "登录",
+                signup: "注册",
+                "features-title": "自由·发现·突破",
+                "features-subtitle": "体验Cognot的强大功能，创想可能，启迪灵感",
+                "video-gallery-title": "AI创作展示",
+                "video-gallery-subtitle": "查看我们强大的AI创作能力，包括绘画、视频和更多精彩内容。",
+                "video-title-1": "AI绘画演示",
+                "video-desc-1": "展示我们强大的AI绘画功能，创造出令人惊叹的艺术作品。",
+                "video-title-2": "视频生成技术",
+                "video-desc-2": "了解我们的AI视频生成技术，轻松创建高质量视频内容。",
+                "video-title-3": "自动化工作流程",
+                "video-desc-3": "探索我们的AI自动化工作流程，提高您的工作效率。",
+                "video-title-4": "AI语音合成",
+                "video-desc-4": "体验我们的AI语音合成技术，创造自然流畅的语音内容。",
+                "feature-messaging": "实时消息",
+                "feature-messaging-desc": "立即发送和接收消息，保持沟通畅通。支持文本、表情、图片和文件发送。",
+                "feature-video": "视频通话",
+                "feature-video-desc": "高清视频通话，支持多人会议，让您与亲友、同事仿佛面对面交流。",
+                "feature-voice": "语音通话",
+                "feature-voice-desc": "清晰稳定的语音通话服务，支持多人语音聊天，适合团队协作和朋友聚会。",
+                "feature-communities": "社区支持",
+                "feature-communities-desc": "加入兴趣社区，与志同道合的人交流分享，发现更多有趣的内容和话题。",
+                "feature-security": "安全加密",
+                "feature-security-desc": "端到端加密技术，保护您的隐私和数据安全，让您的通信更加安心。",
+                "feature-mobile": "多设备同步",
+                "feature-mobile-desc": "支持电脑、手机、平板等多种设备同步，让您随时随地保持连接。",
+                "feature-emoji": "丰富表情",
+                "feature-emoji-desc": "海量表情、贴纸和GIF动图，让您的聊天更加生动有趣，表达更丰富的情感。",
+                "feature-notifications": "智能通知",
+                "feature-notifications-desc": "自定义通知设置，不错过重要消息，同时避免打扰，保持专注。",
+                company: "公司",
+                "about-us": "关于我们",
+                blog: "博客",
+                careers: "招聘",
+                contact: "联系我们",
+                resources: "资源",
+                "help-center": "帮助中心",
+                status: "服务状态",
+                terms: "服务条款",
+                privacy: "隐私政策",
+                windows: "Windows",
+                mac: "Mac",
+                ios: "iOS",
+                android: "Android",
+                "follow-us": "关注我们",
+                "all-rights-reserved": "保留所有权利"
+            },
+            en: {
+                home: "Home",
+                product: "Product",
+                features: "Features",
+                community: "Community",
+                documentation: "Documentation",
+                login: "Login",
+                signup: "Sign Up",
+                "features-title": "Freedom · Discovery · Breakthrough",
+                "features-subtitle": "Experience the powerful features of Cognot, creating possibilities and inspiring inspiration.",
+                "video-gallery-title": "AI Creation Showcase",
+                "video-gallery-subtitle": "Explore our powerful AI creation capabilities, including painting, video and more exciting content.",
+                "video-title-1": "AI Painting Demo",
+                "video-desc-1": "Showcasing our powerful AI painting capabilities, creating stunning works of art.",
+                "video-title-2": "Video Generation Technology",
+                "video-desc-2": "Learn about our AI video generation technology, easily create high-quality video content.",
+                "video-title-3": "Automated Workflows",
+                "video-desc-3": "Explore our AI automated workflows, improve your work efficiency.",
+                "video-title-4": "AI Voice Synthesis",
+                "video-desc-4": "Experience our AI voice synthesis technology, creating natural and smooth voice content.",
+                "feature-messaging": "Real-time Messaging",
+                "feature-messaging-desc": "Send and receive messages instantly, stay connected at all times. Support text, emojis, images and file sharing.",
+                "feature-video": "Video Calls",
+                "feature-video-desc": "High-definition video calls, support for multi-person meetings, making you feel like you're face-to-face with friends and colleagues.",
+                "feature-voice": "Voice Calls",
+                "feature-voice-desc": "Clear and stable voice call service, support for multi-person voice chat, suitable for team collaboration and friends gatherings.",
+                "feature-communities": "Community Support",
+                "feature-communities-desc": "Join interest communities, share with like-minded people, and discover more interesting content and topics.",
+                "feature-security": "Secure Encryption",
+                "feature-security-desc": "End-to-end encryption technology to protect your privacy and data security, making your communication more secure.",
+                "feature-mobile": "Multi-device Sync",
+                "feature-mobile-desc": "Support for synchronization across computers, phones, tablets and other devices, keeping you connected anytime, anywhere.",
+                "feature-emoji": "Rich Emojis",
+                "feature-emoji-desc": "Massive emojis, stickers and GIFs to make your chat more lively and interesting, expressing more rich emotions.",
+                "feature-notifications": "Smart Notifications",
+                "feature-notifications-desc": "Custom notification settings, never miss important messages while avoiding distractions and staying focused.",
+                company: "Company",
+                "about-us": "About Us",
+                blog: "Blog",
+                careers: "Careers",
+                contact: "Contact Us",
+                resources: "Resources",
+                "help-center": "Help Center",
+                status: "Service Status",
+                terms: "Terms of Service",
+                privacy: "Privacy Policy",
+                windows: "Windows",
+                mac: "Mac",
+                ios: "iOS",
+                android: "Android",
+                "follow-us": "Follow Us",
+                "all-rights-reserved": "All rights reserved"
+            }
+        };
+
+        // 设置语言
+        function setLanguage(lang) {
+            document.documentElement.lang = lang;
+            const elements = document.querySelectorAll('.lang[data-key]');
+            elements.forEach(element => {
+                const key = element.getAttribute('data-key');
+                element.textContent = translations[lang][key];
+            });
+            
+            // 更新语言按钮状态
+            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+            document.getElementById(`lang-${lang}`).classList.add('active');
+            
+            // 保存语言选择到localStorage
+            localStorage.setItem('preferredLanguage', lang);
+        }
+
+        // 获取浏览器语言
+        function getBrowserLanguage() {
+            const browserLang = navigator.language || navigator.userLanguage;
+            return browserLang.startsWith('zh') ? 'zh' : 'en';
+        }
+
+        // 初始化
+        document.addEventListener('DOMContentLoaded', () => {
+            // 检查localStorage中是否有保存的语言偏好
+            const savedLang = localStorage.getItem('preferredLanguage');
+            // 如果没有保存的语言，使用浏览器语言
+            const initialLang = savedLang || getBrowserLanguage();
+            setLanguage(initialLang);
+
+            // 添加语言切换按钮事件监听器
+            document.getElementById('lang-zh').addEventListener('click', () => setLanguage('zh'));
+            document.getElementById('lang-en').addEventListener('click', () => setLanguage('en'));
+        });
+    </script>
+    <!-- Font Awesome 图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</body>
+</html>
