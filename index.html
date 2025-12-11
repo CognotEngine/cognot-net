@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cognot - 认知引擎</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo-link">
+                <div class="logo">
+                    <img src="logo.png" alt="Popolili Logo">
+                </div>
+            </a>
+        </div>
+        <div class="navbar-center">
+            <div class="dropdown">
+                <a href="#" class="nav-link dropdown-toggle">
+                    <span class="lang" data-key="product">产品</span>
+                </a>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">Windows版</a>
+                </div>
+            </div>
+            <a href="features/index.html" class="nav-link">
+                <span class="lang" data-key="features">功能特性</span>
+            </a>
+            <div class="dropdown">
+                <a href="#" class="nav-link dropdown-toggle">
+                    <span class="lang" data-key="community">社区</span>
+                </a>
+                <div class="dropdown-menu">
+                    <a href="https://github.com/CognotEngine/congnot" class="dropdown-item" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://wx.com/CognotEngine" class="dropdown-item" target="_blank">
+                        <i class="fab fa-twitter"></i> Twitter
+                    </a>
+                    <a href="https://discord.gg/F4wFbwZTXu" class="dropdown-item" target="_blank">
+                        <i class="fab fa-discord"></i> Discord
+                    </a>
+                </div>
+            </div>
+            <a href="#" class="nav-link">
+                <span class="lang" data-key="documentation">文档</span>
+            </a>
+        </div>
+        <div class="navbar-right">
+            <!-- 语言切换按钮 -->
+            <div class="language-switch">
+                <button id="lang-zh" class="lang-btn active">中文</button>
+                <button id="lang-en" class="lang-btn">English</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主内容区 -->
+    <main class="main-content">
+        <div class="content-center">
+            <h1 class="lang" data-key="hero-title">适用AI绘画·视频强大的人工智能应用</h1>
+            <p class="lang" data-key="hero-description">Cognot是一个开源高级AI自动化流程平台，功能强大、界面简洁、扩展性强</p>
+            <div class="cta-buttons">
+                <button class="download-btn">
+                    <i class="fa fa-download"></i>
+                    <span class="lang" data-key="download">下载应用</span>
+                </button>
+                <button class="browser-btn">
+                    <i class="fa fa-globe"></i>
+                    <span class="lang" data-key="try-browser">浏览器体验</span>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 class="lang" data-key="company">公司</h3>
+                <ul>
+                    <li><a href="#" class="lang" data-key="about-us">关于我们</a></li>
+                    <li><a href="#" class="lang" data-key="blog">博客</a></li>
+                    <li><a href="#" class="lang" data-key="careers">招聘</a></li>
+                    <li><a href="#" class="lang" data-key="contact">联系我们</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 class="lang" data-key="resources">资源</h3>
+                <ul>
+                    <li><a href="#" class="lang" data-key="help-center">帮助中心</a></li>
+                    <li><a href="#" class="lang" data-key="status">服务状态</a></li>
+                    <li><a href="#" class="lang" data-key="terms">服务条款</a></li>
+                    <li><a href="#" class="lang" data-key="privacy">隐私政策</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 class="lang" data-key="download">下载</h3>
+                <ul>
+                    <li><a href="#" class="lang" data-key="windows">Windows</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 class="lang" data-key="follow-us">关注我们</h3>
+                <div class="social-links">
+                    <a href="https://wx.com/CognotEngine" class="social-link" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://github.com/CognotEngine/congnot" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://discord.gg/F4wFbwZTXu" class="social-link" target="_blank"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="logo">
+                <i class="fa fa-star"></i>
+                Cognot
+            </div>
+            <p>&copy; 2025 CognotEngine. <span class="lang" data-key="all-rights-reserved">保留所有权利</span>.</p>
+        </div>
+    </footer>
+
+    <!-- 多语言支持脚本 -->
+    <script>
+        // 语言包
+        const translations = {
+            zh: {
+                home: "首页",
+                features: "功能特性",
+                community: "社区",
+                documentation: "文档",
+                login: "登录",
+                signup: "注册",
+                product: "产品",
+                "hero-title": "适用AI绘画·视频强大的人工智能应用",
+                "hero-description": "Cognot是一个开源高级AI自动化流程平台，功能强大、界面简洁、扩展性强",
+                download: "下载应用",
+                "try-browser": "浏览器体验",
+                "feature-messaging": "实时消息",
+                "feature-messaging-desc": "立即发送和接收消息，保持沟通畅通。",
+                "feature-video": "视频通话",
+                "feature-video-desc": "高清视频通话，仿佛面对面交流。",
+                "feature-communities": "社区支持",
+                "feature-communities-desc": "加入兴趣社区，与志同道合的人交流。",
+                "feature-security": "安全加密",
+                "feature-security-desc": "端到端加密，保护您的隐私和数据安全。",
+                company: "公司",
+                "about-us": "关于我们",
+                blog: "博客",
+                careers: "招聘",
+                contact: "联系我们",
+                resources: "资源",
+                "help-center": "帮助中心",
+                status: "服务状态",
+                terms: "服务条款",
+                privacy: "隐私政策",
+                windows: "Windows",
+                mac: "Mac",
+                ios: "iOS",
+                android: "Android",
+                "follow-us": "关注我们",
+                "all-rights-reserved": "保留所有权利"
+            },
+            en: {
+                home: "Home",
+                features: "Features",
+                community: "Community",
+                documentation: "Documentation",
+                login: "Login",
+                signup: "Sign Up",
+                product: "Product",
+                "hero-title": "Powerful AI Application for AI Painting and Video",
+                "hero-description": "Cognot is an open-source advanced AI automation workflow platform, powerful, simple interface, and highly extensible.",
+                download: "Download App",
+                "try-browser": "Try in Browser",
+                "feature-messaging": "Real-time Messaging",
+                "feature-messaging-desc": "Send and receive messages instantly, stay connected at all times.",
+                "feature-video": "Video Calls",
+                "feature-video-desc": "High-definition video calls that feel like you're in the same room.",
+                "feature-communities": "Community Support",
+                "feature-communities-desc": "Join interest-based communities and connect with like-minded people.",
+                "feature-security": "Secure Encryption",
+                "feature-security-desc": "End-to-end encryption to protect your privacy and data security.",
+                company: "Company",
+                "about-us": "About Us",
+                blog: "Blog",
+                careers: "Careers",
+                contact: "Contact Us",
+                resources: "Resources",
+                "help-center": "Help Center",
+                status: "Service Status",
+                terms: "Terms of Service",
+                privacy: "Privacy Policy",
+                windows: "Windows",
+                mac: "Mac",
+                ios: "iOS",
+                android: "Android",
+                "follow-us": "Follow Us",
+                "all-rights-reserved": "All rights reserved"
+            }
+        };
+
+        // 设置语言
+        function setLanguage(lang) {
+            document.documentElement.lang = lang;
+            const elements = document.querySelectorAll('.lang[data-key]');
+            elements.forEach(element => {
+                const key = element.getAttribute('data-key');
+                element.textContent = translations[lang][key];
+            });
+            
+            // 更新语言按钮状态
+            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+            document.getElementById(`lang-${lang}`).classList.add('active');
+            
+            // 保存语言选择到localStorage
+            localStorage.setItem('preferredLanguage', lang);
+        }
+
+        // 获取浏览器语言
+        function getBrowserLanguage() {
+            const browserLang = navigator.language || navigator.userLanguage;
+            return browserLang.startsWith('zh') ? 'zh' : 'en';
+        }
+
+        // 初始化
+        document.addEventListener('DOMContentLoaded', () => {
+            // 检查localStorage中是否有保存的语言偏好
+            const savedLang = localStorage.getItem('preferredLanguage');
+            // 如果没有保存的语言，使用浏览器语言
+            const initialLang = savedLang || getBrowserLanguage();
+            setLanguage(initialLang);
+
+            // 添加语言切换按钮事件监听器
+            document.getElementById('lang-zh').addEventListener('click', () => setLanguage('zh'));
+            document.getElementById('lang-en').addEventListener('click', () => setLanguage('en'));
+        });
+    </script>
+    <!-- Font Awesome 图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</body>
+</html>
