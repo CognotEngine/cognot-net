@@ -1,8 +1,18 @@
-/* 全局样式重置 */
+/* 全局样式重置 - 跨浏览器兼容 */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+/* 图片元素重置 */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border: 0;
 }
 
 /* 全局变量定义 */
@@ -246,19 +256,29 @@ body {
     line-height: 1.2;
 }
 
-/* 英雄图片样式 */
+/* 英雄图片样式 - 跨浏览器兼容 */
  .hero-image {
      margin-bottom: var(--spacing-lg);
      display: flex;
      justify-content: center;
      align-items: center;
      width: 100%;
+     box-sizing: border-box;
+     min-height: 0;
+     flex-shrink: 0;
+     -webkit-box-align: center;
+     -webkit-box-pack: center;
  }
  
  .hero-img {
      max-width: 1000px;
-     width: 120%;
+     width: 110%;
      height: auto;
+     display: block;
+     margin: 0 auto;
+     box-sizing: border-box;
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
  }
 
 .content-left p {
